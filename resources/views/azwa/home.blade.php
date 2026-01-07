@@ -97,23 +97,44 @@
         .add-cart-btn { padding: 12px; font-size: 12px; }
     }
 
-    /* Cosmic/Wedding Section */
+    /* Shop By Gender */
+    .gender-section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+    .gender-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .gender-card { position: relative; height: 400px; border-radius: 4px; overflow: hidden; cursor: pointer; }
+    .gender-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+    .gender-card:hover img { transform: scale(1.05); }
+    .gender-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
+    .gender-card:hover .gender-overlay { background: rgba(0,0,0,0.4); }
+    .gender-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.5); padding: 15px 30px; backdrop-filter: blur(2px); }
+
+    @media (max-width: 768px) {
+        .gender-grid { grid-template-columns: 1fr; }
+        .gender-card { height: 250px; }
+    }
+
+    /* Cosmic/Wedding Section (Marquee) */
     .wedding-section {
         background: #06281e; /* Darker Emerald */
-        color: var(--white); padding: 100px 20px; text-align: center;
-        position: relative;
+        color: var(--white); padding: 80px 0; text-align: center;
+        overflow: hidden;
     }
-    .wedding-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+    .wedding-content { max-width: 800px; margin: 0 auto 50px; padding: 0 20px; }
     .wedding-title { font-family: 'Playfair Display', serif; font-size: 42px; color: var(--secondary-color); margin-bottom: 20px; }
-    .wedding-text { font-size: 16px; line-height: 1.8; opacity: 0.9; margin-bottom: 40px; font-weight: 300; }
-    .wedding-grid {
-        display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
-        margin-top: 50px; padding-bottom: 30px;
-        overflow-x: auto; scrollbar-width: none;
+    .wedding-text { font-size: 16px; opacity: 0.9; margin-bottom: 30px; font-weight: 300; }
+    
+    .marquee-container { width: 100%; overflow: hidden; white-space: nowrap; position: relative; }
+    .marquee-track { display: flex; gap: 20px; animation: scroll 30s linear infinite; width: max-content; }
+    .wedding-item { 
+        position: relative; width: 300px; height: 400px; flex-shrink: 0; 
+        border-radius: 4px; overflow: hidden; cursor: pointer; 
     }
-    .wedding-item { position: relative; aspect-ratio: 3/4; border-radius: 4px; overflow: hidden; cursor: pointer; }
-    .wedding-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s; }
+    .wedding-item img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s; }
     .wedding-item:hover img { opacity: 1; }
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); } /* Move half because we duplicate content */
+    }
 
     /* Why We Do (About) - Redesigned */
     .about-section { 
@@ -371,7 +392,34 @@
         </div>
     </section>
 
-    <!-- Wedding Collection -->
+    <!-- Shop By Gender -->
+    <section class="gender-section">
+        <div class="section-header">
+            <h2 class="section-title">Shop by Gender</h2>
+        </div>
+        <div class="gender-grid">
+            <div class="gender-card" onclick="window.location='/collection?category=women'">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80" alt="Women">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">Women</h3>
+                </div>
+            </div>
+            <div class="gender-card" onclick="window.location='/collection?category=men'">
+                <img src="https://images.unsplash.com/photo-1622398931139-44569d30005a?auto=format&fit=crop&w=600&q=80" alt="Men">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">Men</h3>
+                </div>
+            </div>
+            <div class="gender-card" onclick="window.location='/collection?category=kids'">
+                <img src="https://images.unsplash.com/photo-1601666497274-0f2c4167905f?auto=format&fit=crop&w=600&q=80" alt="Kids">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">Kids</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Collection (Marquee) -->
     <div class="wedding-section">
         <div class="wedding-content">
             <h2 class="wedding-title">The Wedding Collection</h2>
@@ -382,11 +430,24 @@
             <a href="/cosmopolitan" class="hero-btn" style="border-color: var(--secondary-color); color: var(--secondary-color);">View Collection</a>
         </div>
         
-        <div class="wedding-grid">
-            <div class="wedding-item"><img src="https://images.unsplash.com/photo-1603561591411-cd7eb9527c55?auto=format&fit=crop&w=400&q=80" alt="Bridal"></div>
-            <div class="wedding-item"><img src="https://images.unsplash.com/photo-1629224316810-9d8805b95076?auto=format&fit=crop&w=400&q=80" alt="Bridal"></div>
-            <div class="wedding-item"><img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=400&q=80" alt="Bridal"></div>
-            <div class="wedding-item"><img src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?auto=format&fit=crop&w=400&q=80" alt="Bridal"></div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <!-- Set 1 -->
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1603561591411-cd7eb9527c55?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1629224316810-9d8805b95076?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1589674781759-c21c34028bc6?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                
+                <!-- Set 2 (Duplicate for smooth scroll) -->
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1603561591411-cd7eb9527c55?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1629224316810-9d8805b95076?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1589674781759-c21c34028bc6?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+                <div class="wedding-item"><img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=600&q=80" alt="Bridal"></div>
+            </div>
         </div>
     </div>
 
