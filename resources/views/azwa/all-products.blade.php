@@ -1,6 +1,6 @@
-@extends('nurah.layouts.app')
+@extends('azwa.layouts.app')
 
-@section('title', ($title ?? 'Fine Jewelry') . ' - Azwa Jewelry')
+@section('title', ($title ?? 'Fine Jewelry') . ' - Harees Gold Diamonds')
 
 @push('styles')
 <style>

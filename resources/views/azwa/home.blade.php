@@ -143,8 +143,6 @@
         .product-grid { grid-template-columns: repeat(4, 1fr); gap: 30px; }
         .category-grid { grid-template-columns: repeat(3, 1fr); }
         .blog-grid { grid-template-columns: repeat(3, 1fr); }
-        .about-section { grid-template-columns: 1fr 1px; }
-        /* Fix for about section grid column count - intended to be 2 column */
         .about-section { grid-template-columns: 1fr 1fr; gap: 60px; }
         .video-text { font-size: 56px; }
         .section-title { font-size: 42px; }
@@ -161,13 +159,13 @@
         <div class="slide active">
             <picture>
                 <source media="(max-width: 768px)" srcset="{{ asset('Images/hero-mobile-1.webp') }}">
-                <img src="{{ asset('Images/hero-desktop-1.webp') }}" alt="Buy 2 Get 1">
+                <img src="{{ asset('Images/hero-desktop-1.webp') }}" alt="Harees Gold Diamonds">
             </picture>
         </div>
         <div class="slide">
             <picture>
                 <source media="(max-width: 768px)" srcset="{{ asset('Images/hero-mobile-2.webp') }}">
-                <img src="{{ asset('Images/hero-desktop-2.webp') }}" alt="New Store">
+                <img src="{{ asset('Images/hero-desktop-2.webp') }}" alt="New Collection">
             </picture>
         </div>
         <div class="slide">
@@ -179,7 +177,7 @@
         <div class="slide">
             <picture>
                 <source media="(max-width: 768px)" srcset="https://myop.in/cdn/shop/files/marshamallow_phone.webp?v=1753949875&width=1000">
-                <img src="{{ asset('Images/hero-desktop-4.webp') }}" alt="Marshmallow">
+                <img src="{{ asset('Images/hero-desktop-4.webp') }}" alt="Exclusive">
             </picture>
         </div>
         <div class="slider-dots">
@@ -190,7 +188,45 @@
         </div>
     </div>
 
-    <!-- Bestsellers -->
+    <!-- Our Collections (Reordered: Was #3) -->
+    <section class="section" id="signature">
+        <div class="section-header">
+            <h2 class="section-title">Our <em>Collections</em></h2>
+        </div>
+        <div class="category-grid">
+            <a href="/collections?category=necklaces" class="category-card">
+                <img src="{{ asset('Images/category-fresh.webp') }}" alt="Necklaces">
+                <div class="category-overlay">
+                    <div>
+                        <h3 class="category-name">NECKLACES</h3>
+                        <p class="category-desc">Statement. Elegant. Timeless.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/collections?category=rings" class="category-card">
+                <img src="{{ asset('Images/category-oriental-woody.webp') }}" alt="Rings">
+                <div class="category-overlay">
+                    <div>
+                        <h3 class="category-name">RINGS</h3>
+                        <p class="category-desc">Engagement. Wedding. Fashion.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/collections?category=earrings" class="category-card">
+                <img src="{{ asset('Images/category-floral.webp') }}" alt="Earrings">
+                <div class="category-overlay">
+                    <div>
+                        <h3 class="category-name">EARRINGS</h3>
+                        <p class="category-desc">Studs. Hoops. Drops.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bestsellers (Reordered: Was #2) -->
     <section class="section">
         <div class="section-header">
             <h2 class="section-title">Discover <em>Our Bestsellers</em></h2>
@@ -281,56 +317,36 @@
         <a href="/all-products" class="view-all-btn">View All Products</a>
     </section>
 
-    <!-- Store Section -->
-    <div class="store-section" id="stores">
-        <div class="store-count">60</div>
-        <h2 class="store-title">Stores Near You</h2>
-        <p class="store-subtitle">Find a store near you</p>
-        <a href="/stores" class="store-btn">Locate Stores</a>
-        <p class="store-description">
-            Azwa Jewelry offers exquisite, hand-crafted jewelry with exceptional expertise in the art of design and craftsmanship.
-        </p>
-    </div>
-
-    <!-- Our Fragrances -->
-    <section class="section" id="signature">
+    <!-- Shop By Gender -->
+    <section class="section">
         <div class="section-header">
-            <h2 class="section-title">Our <em>Collections</em></h2>
+            <h2 class="section-title">Shop By <em>Gender</em></h2>
         </div>
-        <div class="category-grid">
-            <a href="/collections?category=necklaces" class="category-card">
-                <img src="{{ asset('Images/category-fresh.webp') }}" alt="Necklaces">
-                <div class="category-overlay">
-                    <div>
-                        <h3 class="category-name">NECKLACES</h3>
-                        <p class="category-desc">Statement. Elegant. Timeless.</p>
-                    </div>
+        <div class="gender-grid">
+            <a href="/collections?gender=for-him" class="gender-card">
+                <img src="{{ asset('Images/gender-him.webp') }}" alt="For Him">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">FOR HIM</h3>
                 </div>
             </a>
 
-            <a href="/collections?category=rings" class="category-card">
-                <img src="{{ asset('Images/category-oriental-woody.webp') }}" alt="Rings">
-                <div class="category-overlay">
-                    <div>
-                        <h3 class="category-name">RINGS</h3>
-                        <p class="category-desc">Engagement. Wedding. Fashion.</p>
-                    </div>
+            <a href="/collections?gender=for-her" class="gender-card">
+                <img src="{{ asset('Images/gender-her.webp') }}" alt="For Her">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">FOR HER</h3>
                 </div>
             </a>
 
-            <a href="/collections?category=earrings" class="category-card">
-                <img src="{{ asset('Images/category-floral.webp') }}" alt="Earrings">
-                <div class="category-overlay">
-                    <div>
-                        <h3 class="category-name">EARRINGS</h3>
-                        <p class="category-desc">Studs. Hoops. Drops.</p>
-                    </div>
+            <a href="/collections?gender=unisex" class="gender-card">
+                <img src="{{ asset('Images/gender-unisex.webp') }}" alt="Unisex">
+                <div class="gender-overlay">
+                    <h3 class="gender-title">UNISEX</h3>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- Cosmopolitan -->
+    <!-- Cosmopolitan / Wedding -->
     <div class="cosmopolitan-section" id="cosmopolitan">
         <div class="cosmo-header">
             <h2 class="cosmo-title"><em>Wedding Collection</em></h2>
@@ -380,44 +396,18 @@
         <a href="/cosmopolitan" class="view-all-btn" style="background: var(--gold);">Shop Collection</a>
     </div>
 
-    <!-- Video Section -->
-    <div class="video-section">
-        <video autoplay loop muted playsinline>
-            <source src="https://myop.in/cdn/shop/videos/c/vp/d3c4018982b7463b856b22c551804e7d/d3c4018982b7463b856b22c551804e7d.HD-1080p-3.3Mbps-48643562.mp4?v=0" type="video/mp4">
-        </video>
-        <div class="video-overlay">
-            <h2 class="video-text">A gift that lasts a lifetime</h2>
+    <!-- About -->
+    <div class="about-section" id="about">
+        <div class="about-image">
+            <img src="{{ asset('Images/about-store.webp') }}" alt="Harees Store">
+        </div>
+        <div>
+            <h2 class="about-title"><em>Why We Do,</em> What We Do</h2>
+            <p class="about-text">Harees Gold Diamonds is India's premium jewelry brand known for <strong>high-quality, hand-crafted</strong> designs with unparalleled expertise in the art of adornment.</p>
+            <p class="about-text">Harees jewelry, crafted with <strong>certified gold and diamonds</strong> lasts for generations to come.</p>
+            <a href="/about" class="about-btn">Learn More</a>
         </div>
     </div>
-
-    <!-- Shop By Gender -->
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">Shop By <em>Gender</em></h2>
-        </div>
-        <div class="gender-grid">
-            <a href="/collections?gender=for-him" class="gender-card">
-                <img src="{{ asset('Images/gender-him.webp') }}" alt="For Him">
-                <div class="gender-overlay">
-                    <h3 class="gender-title">FOR HIM</h3>
-                </div>
-            </a>
-
-            <a href="/collections?gender=for-her" class="gender-card">
-                <img src="{{ asset('Images/gender-her.webp') }}" alt="For Her">
-                <div class="gender-overlay">
-                    <h3 class="gender-title">FOR HER</h3>
-                </div>
-            </a>
-
-            <a href="/collections?gender=unisex" class="gender-card">
-                <img src="{{ asset('Images/gender-unisex.webp') }}" alt="Unisex">
-                <div class="gender-overlay">
-                    <h3 class="gender-title">UNISEX</h3>
-                </div>
-            </a>
-        </div>
-    </section>
 
     <!-- Testimonials -->
     <div class="testimonials">
@@ -432,7 +422,7 @@
             </div>
 
             <div class="testimonial-card">
-                <p class="testimonial-text">I was looking for a unique gift, and Azwa was the perfect choice. The <em>packaging is as exquisite</em> as the jewelry itself.</p>
+                <p class="testimonial-text">I was looking for a unique gift, and Harees was the perfect choice. The <em>packaging is as exquisite</em> as the jewelry itself.</p>
                 <p class="testimonial-author">— Rahul Menon</p>
                 <p class="testimonial-location">Kochi</p>
             </div>
@@ -451,6 +441,27 @@
         </div>
     </div>
 
+    <!-- Video Section -->
+    <div class="video-section">
+        <video autoplay loop muted playsinline>
+            <source src="https://myop.in/cdn/shop/videos/c/vp/d3c4018982b7463b856b22c551804e7d/d3c4018982b7463b856b22c551804e7d.HD-1080p-3.3Mbps-48643562.mp4?v=0" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h2 class="video-text">A gift that lasts a lifetime</h2>
+        </div>
+    </div>
+
+    <!-- Store Section -->
+    <div class="store-section" id="stores">
+        <div class="store-count">60</div>
+        <h2 class="store-title">Stores Near You</h2>
+        <p class="store-subtitle">Find a store near you</p>
+        <a href="/stores" class="store-btn">Locate Stores</a>
+        <p class="store-description">
+            Harees Gold Diamonds offers exquisite, hand-crafted jewelry with exceptional expertise in the art of design and craftsmanship.
+        </p>
+    </div>
+
     <!-- Press -->
     <div class="press-section">
         <h2 class="press-title">As <em>seen</em> on</h2>
@@ -461,54 +472,6 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Elle_Magazine.svg/1200px-Elle_Magazine.svg.png" alt="Magazine" class="press-logo">
         </div>
     </div>
-
-    <!-- About -->
-    <div class="about-section" id="about">
-        <div class="about-image">
-            <img src="{{ asset('Images/about-store.webp') }}" alt="MYOP Store">
-        </div>
-        <div>
-            <h2 class="about-title"><em>Why We Do,</em> What We Do</h2>
-            <p class="about-text">Azwa Jewelry is India's premium jewelry brand known for <strong>high-quality, hand-crafted</strong> designs with unparalleled expertise in the art of adornment.</p>
-            <p class="about-text">Azwa jewelry, crafted with <strong>certified gold and diamonds</strong> lasts for generations to come.</p>
-            <a href="/about" class="about-btn">Learn More</a>
-        </div>
-    </div>
-
-    <!-- Blog -->
-    <!-- <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">From the <em>Journal</em></h2>
-        </div>
-        <div class="blog-grid">
-            <div class="blog-card">
-                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80" alt="Blog" class="blog-image">
-                <div class="blog-content">
-                    <p class="blog-date">Dec 03, 2025</p>
-                    <h3 class="blog-title">Green Apple Used in Perfumes</h3>
-                    <a href="/blog/green-apple" class="blog-link">Read more →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&q=80" alt="Blog" class="blog-image">
-                <div class="blog-content">
-                    <p class="blog-date">Nov 26, 2025</p>
-                    <h3 class="blog-title">Sandalwood - The Instant Wood Fragrance</h3>
-                    <a href="/blog/sandalwood" class="blog-link">Read more →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <img src="https://images.unsplash.com/photo-1587556930832-5e67d85c8f05?w=800&q=80" alt="Blog" class="blog-image">
-                <div class="blog-content">
-                    <p class="blog-date">Nov 22, 2025</p>
-                    <h3 class="blog-title">October Newsletter</h3>
-                    <a href="/blog/newsletter" class="blog-link">Read more →</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Features -->
     <div class="features">
@@ -536,11 +499,11 @@
     <div class="popup-newsletter" id="popup">
         <button class="popup-close" onclick="closePopup()">×</button>
         <p class="popup-tag">First Time?</p>
-        <h2 class="popup-title">JOIN THE <em>#AZWASQUAD</em></h2>
+        <h2 class="popup-title">JOIN THE <em>#HAREESSQUAD</em></h2>
         <p class="popup-subtitle">AND GET 20% OFF!</p>
         <div class="popup-code">
             <p class="popup-code-text">USE CODE:</p>
-            <p class="popup-code-value">FIRSTJEWEL20</p>
+            <p class="popup-code-value">FIRSTGOLD20</p>
         </div>
         <form class="newsletter-form">
             <input type="email" placeholder="Enter your email" class="newsletter-input">

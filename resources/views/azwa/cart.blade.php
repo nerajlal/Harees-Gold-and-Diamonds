@@ -1,6 +1,6 @@
-@extends('nurah.layouts.app')
+@extends('azwa.layouts.app')
 
-@section('title', 'Shopping Cart - Nurah Perfumes')
+@section('title', 'Shopping Cart - Harees Gold Diamonds')
 
 @push('styles')
 <style>

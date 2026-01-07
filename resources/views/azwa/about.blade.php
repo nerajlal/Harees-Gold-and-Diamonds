@@ -1,6 +1,6 @@
-@extends('nurah.layouts.app')
+@extends('azwa.layouts.app')
 
-@section('title', 'About Us - Nurah Perfumes')
+@section('title', 'About Us - Harees Gold Diamonds')
 
 @push('styles')
 <style>
@@ -145,7 +145,7 @@
             <div class="story-content">
                 <h2>Why We Do, What We Do</h2>
                 <p class="story-text">
-                    Azwa Jewelry was born from a simple yet profound desire: to bring the art of high-quality jewelry to everyone. We believe that a piece of jewelry is more than just an accessory; it's a memory, an emotion, and a personal statement.
+                    Harees Gold Diamonds was born from a simple yet profound desire: to bring the art of high-quality jewelry to everyone. We believe that a piece of jewelry is more than just an accessory; it's a memory, an emotion, and a personal statement.
                 </p>
                 <p class="story-text">
                     As India's pioneering jewelry boutique, we combine traditional expertise with modern designs. Our pieces are crafted with <strong>certified gold and diamonds</strong>, ensuring they sparkle for a lifetime and become heirlooms for generations.

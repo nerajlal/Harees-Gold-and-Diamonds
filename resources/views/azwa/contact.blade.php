@@ -1,6 +1,6 @@
-@extends('nurah.layouts.app')
+@extends('azwa.layouts.app')
 
-@section('title', 'Contact Us - Azwa Jewelry')
+@section('title', 'Contact Us - Harees Gold Diamonds')
 
 @push('styles')
 <style>
@@ -160,7 +160,7 @@
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-envelope"></i></div>
                     <h3 class="info-title">Email Us</h3>
-                    <a href="mailto:support@azwa.in" class="info-link">support@azwa.in</a>
+                    <a href="mailto:support@harees.in" class="info-link">support@harees.in</a>
                 </div>
 
                 <div class="info-item">

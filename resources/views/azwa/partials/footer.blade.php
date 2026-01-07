@@ -3,7 +3,7 @@
     <div class="footer-content">
         <!-- Brand Column -->
         <div class="footer-col">
-            <div class="footer-logo">Azwa Jewelry</div>
+            <div class="footer-logo">Harees Gold Diamonds</div>
             <p class="footer-tagline">Exquisite jewelry for every occasion. Discover our timeless collection of rings, necklaces, and more.</p>
             <div class="footer-social">
                 <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -49,7 +49,7 @@
 
     <div class="footer-bottom">
         <div class="copyright">
-            © 2025 Azwa Jewelry. All rights reserved. 
+            © 2026 Harees Gold Diamonds. All rights reserved. 
             <span style="opacity: 0.7; margin-left: 5px;">Developed by <a href="https://metora.in/" target="_blank" style="color: var(--gold); text-decoration: none; font-weight: bold;">Metora</a></span>
         </div>
         <div class="payment-icons">

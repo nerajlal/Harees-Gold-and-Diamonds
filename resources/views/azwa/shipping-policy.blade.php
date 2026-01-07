@@ -8,7 +8,7 @@
         <h2 class="section-title">Shipping <em>Policy</em></h2>
     </div>
     <div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
-        <p>At Azwa Jewelry, we strive to deliver your orders in the best condition and in the shortest time possible.</p>
+        <p>At Harees Gold Diamonds, we strive to deliver your orders in the best condition and in the shortest time possible.</p>
         <br>
         <h3>Shipping Charges</h3>
         <p>We offer free shipping on all orders above ₹399 within India.</p>

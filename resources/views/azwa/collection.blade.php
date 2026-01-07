@@ -1,6 +1,6 @@
-@extends('nurah.layouts.app')
+@extends('azwa.layouts.app')
 
-@section('title', ($title ?? 'Fine Jewelry') . ' - Azwa Jewelry')
+@section('title', ($title ?? 'Fine Jewelry') . ' - Harees Gold Diamonds')
 
 @push('styles')
 <style>
@@ -800,119 +800,119 @@
                 </div>
             </div>
 
-            <!-- Product: Purple Mystique -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Purple Mystique" data-price="1129" data-date="4" data-stock="1" data-gender="her">
+            <!-- Product: Sapphire Drops -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Sapphire Drops" data-price="25129" data-date="4" data-stock="1" data-gender="her">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-purple-mystique.webp') }}" alt="Purple Mystique" class="product-image">
+                    <img src="{{ asset('Images/product-purple-mystique.webp') }}" alt="Sapphire Drops" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Purple Mystique</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Sapphire Drops</h3>
+                    <p class="product-price"><span>From</span> ₹25,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Bangalore Bloom -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Bangalore Bloom" data-price="1129" data-date="5" data-stock="1" data-gender="her">
+            <!-- Product: Emerald Pendant -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Emerald Pendant" data-price="32129" data-date="5" data-stock="1" data-gender="her">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-bangalore-bloom.webp') }}" alt="Bangalore Bloom" class="product-image">
+                    <img src="{{ asset('Images/product-bangalore-bloom.webp') }}" alt="Emerald Pendant" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Bangalore Bloom</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Emerald Pendant</h3>
+                    <p class="product-price"><span>From</span> ₹32,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Fruit Punch -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Fruit Punch" data-price="1129" data-date="6" data-stock="1" data-gender="unisex">
+            <!-- Product: Ruby Bracelet -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Ruby Bracelet" data-price="48129" data-date="6" data-stock="1" data-gender="unisex">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-fruit-punch.webp') }}" alt="Fruit Punch" class="product-image">
+                    <img src="{{ asset('Images/product-fruit-punch.webp') }}" alt="Ruby Bracelet" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Fruit Punch</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Ruby Bracelet</h3>
+                    <p class="product-price"><span>From</span> ₹48,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: One of a Kind -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="One of a Kind" data-price="1129" data-date="7" data-stock="1" data-gender="him">
+            <!-- Product: Platinum Band -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Platinum Band" data-price="55129" data-date="7" data-stock="1" data-gender="him">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-one-of-a-kind.webp') }}" alt="One of a Kind" class="product-image">
+                    <img src="{{ asset('Images/product-one-of-a-kind.webp') }}" alt="Platinum Band" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">One of a Kind</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Platinum Band</h3>
+                    <p class="product-price"><span>From</span> ₹55,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Midnight Jasmine -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Midnight Jasmine" data-price="1129" data-date="8" data-stock="1" data-gender="her">
+            <!-- Product: Pearl Necklace -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Pearl Necklace" data-price="15129" data-date="8" data-stock="1" data-gender="her">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-midnight-jasmine.webp') }}" alt="Midnight Jasmine" class="product-image">
+                    <img src="{{ asset('Images/product-midnight-jasmine.webp') }}" alt="Pearl Necklace" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Midnight Jasmine</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Pearl Necklace</h3>
+                    <p class="product-price"><span>From</span> ₹15,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Amber Elixir -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Amber Elixir" data-price="1129" data-date="9" data-stock="1" data-gender="unisex">
+            <!-- Product: Gold Bangles -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Gold Bangles" data-price="95129" data-date="9" data-stock="1" data-gender="unisex">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/product-amber-elixir.webp') }}" alt="Amber Elixir" class="product-image">
+                    <img src="{{ asset('Images/product-amber-elixir.webp') }}" alt="Gold Bangles" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Amber Elixir</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Gold Bangles</h3>
+                    <p class="product-price"><span>From</span> ₹95,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Ocean Breeze (Category Fresh) -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Ocean Breeze" data-price="929" data-date="10" data-stock="1" data-gender="unisex">
+            <!-- Product: Diamond Studs -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Diamond Studs" data-price="35929" data-date="10" data-stock="1" data-gender="unisex">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/category-fresh.webp') }}" alt="Ocean Breeze" class="product-image">
+                    <img src="{{ asset('Images/category-fresh.webp') }}" alt="Diamond Studs" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Ocean Breeze</h3>
-                    <p class="product-price"><span>From</span> ₹929</p>
+                    <h3 class="product-name">Diamond Studs</h3>
+                    <p class="product-price"><span>From</span> ₹35,929</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Midnight Wood (Category Oriental/Woody) -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Midnight Wood" data-price="1279" data-date="11" data-stock="1" data-gender="him">
+            <!-- Product: Men's Ring -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Men's Ring" data-price="55279" data-date="11" data-stock="1" data-gender="him">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/category-oriental-woody.webp') }}" alt="Midnight Wood" class="product-image">
+                    <img src="{{ asset('Images/category-oriental-woody.webp') }}" alt="Men's Ring" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Midnight Wood</h3>
-                    <p class="product-price"><span>From</span> ₹1,279</p>
+                    <h3 class="product-name">Men's Ring</h3>
+                    <p class="product-price"><span>From</span> ₹55,279</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product: Gardenia (Category Floral) -->
-            <div onclick="window.location.href='/product'" class="product-card" data-name="Gardenia" data-price="1129" data-date="12" data-stock="1" data-gender="her">
+            <!-- Product: Crystal Earrings -->
+            <div onclick="window.location.href='/product'" class="product-card" data-name="Crystal Earrings" data-price="18129" data-date="12" data-stock="1" data-gender="her">
                 <div class="product-image-wrapper">
                     <button class="favorite-btn" onclick="toggleFavorite(event, this)"><i class="far fa-heart"></i></button>
-                    <img src="{{ asset('Images/category-floral.webp') }}" alt="Gardenia" class="product-image">
+                    <img src="{{ asset('Images/category-floral.webp') }}" alt="Crystal Earrings" class="product-image">
                 </div>
                 <div class="product-info">
-                    <h3 class="product-name">Gardenia</h3>
-                    <p class="product-price"><span>From</span> ₹1,129</p>
+                    <h3 class="product-name">Crystal Earrings</h3>
+                    <p class="product-price"><span>From</span> ₹18,129</p>
                     <button class="quick-view-btn" onclick="quickView(event)">Add to Cart</button>
                 </div>
             </div>
@@ -935,7 +935,7 @@
         <div class="feature">
             <div class="feature-icon"><i class="fas fa-undo"></i></div>
             <h3 class="feature-title">Easy Returns</h3>
-            <p class="feature-text">Simple return process with the perfumes</p>
+            <p class="feature-text">Simple 7-day return policy</p>
         </div>
 
         <div class="feature">
@@ -1078,7 +1078,7 @@
             <div class="qv-details">
                 <h2 class="qv-title" id="qvTitle">Product Name</h2>
                 <div class="qv-price" id="qvPrice">₹0</div>
-                <p class="qv-description">Experience the essence of luxury with this exquisite fragrance. Designed for long-lasting appeal and perfect for any occasion.</p>
+                <p class="qv-description">Experience the essence of luxury with this exquisite piece. Designed for timeless elegance and perfect for any occasion.</p>
                 <button class="qv-add-btn">Add to Cart</button>
             </div>
         </div>

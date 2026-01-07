@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Azwa Jewelry - @yield('title', 'Timeless Elegance')</title>
+    <title>Harees Gold Diamonds - @yield('title', 'Timeless Elegance')</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -11,15 +11,19 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         :root {
-            --black: #000000;
+            --primary-color: #0a3d2e; /* Emerald Green */
+            --secondary-color: #d4af37; /* Classic Gold */
+            --black: #0a3d2e; /* Mapping Black to Emerald for general text override if needed, or keep black */
             --white: #ffffff;
-            --gold: #d4a574;
+            --gold: #d4af37;
             --dark-gold: #b8915f;
             --text: #333333;
             --text-light: #666666;
-            --bg-light: #f8f8f8;
+            --bg-light: #f9f9f9;
             --border: #e0e0e0;
             --success: #28a745;
+            --font-main: 'Montserrat', sans-serif;
+            --font-serif: 'Playfair Display', serif;
         }
         body {
             font-family: 'Montserrat', sans-serif;

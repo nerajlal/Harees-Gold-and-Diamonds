@@ -7,7 +7,7 @@
 <div class="mobile-header">
     <div class="header-top">
         <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
-        <a href="{{ route('home') }}" class="logo">Azwa Jewelry</a>
+        <a href="{{ route('home') }}" class="logo">Harees Gold Diamonds</a>
         <div class="header-icons">
             <button class="icon-btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
             <a href="javascript:void(0)" onclick="openLogin()" class="icon-btn" style="color: inherit;"><i class="fas fa-user"></i></a>
