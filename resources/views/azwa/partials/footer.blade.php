@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer>
+<footer style="background-color: var(--primary-color); color: var(--white);">
     <div class="footer-content">
         <!-- Brand Column -->
         <div class="footer-col">
