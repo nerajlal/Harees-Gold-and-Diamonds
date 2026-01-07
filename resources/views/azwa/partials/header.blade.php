@@ -3,14 +3,16 @@
     Free Shipping on all orders above <span>₹399</span>
 </div>
 
+<!-- Desktop Header Styles -->
+<!-- Desktop Header Styles Moved to Layout -->
+
 <!-- Mobile Header -->
 <div class="mobile-header">
     <div class="header-top">
         <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
-        <a href="{{ route('home') }}" class="logo">Harees Gold Diamonds</a>
+        <a href="{{ route('home') }}" class="logo">Harees</a>
         <div class="header-icons">
             <button class="icon-btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
-            <a href="javascript:void(0)" onclick="openLogin()" class="icon-btn" style="color: inherit;"><i class="fas fa-user"></i></a>
             <a href="{{ route('cart') }}" class="icon-btn" style="color: inherit;">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
@@ -23,6 +25,27 @@
             <input type="text" name="q" placeholder="Search..." class="inline-search-input" id="inlineSearchInput">
             <button type="button" class="inline-search-close" onclick="closeSearch()"><i class="fas fa-times"></i></button>
         </form>
+    </div>
+</div>
+
+<!-- Desktop Header -->
+<div class="desktop-header">
+    <a href="{{ route('home') }}" class="desktop-logo">Harees Gold Diamonds</a>
+    <nav class="desktop-nav">
+        <a href="{{ route('home') }}" class="nav-link">Home</a>
+        <a href="{{ route('collection') }}?category=necklaces" class="nav-link">Necklaces</a>
+        <a href="{{ route('collection') }}?category=rings" class="nav-link">Rings</a>
+        <a href="{{ route('collection') }}?category=earrings" class="nav-link">Earrings</a>
+        <a href="{{ route('cosmopolitan') }}" class="nav-link">Bridal</a>
+        <a href="{{ route('about') }}" class="nav-link">About</a>
+    </nav>
+    <div class="desktop-icons">
+        <button class="icon-btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+        <a href="javascript:void(0)" onclick="openLogin()" class="icon-btn" style="color: inherit;"><i class="far fa-user"></i></a>
+        <a href="{{ route('cart') }}" class="icon-btn" style="color: inherit;">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+        </a>
     </div>
 </div>
 

@@ -1,5 +1,14 @@
 <!-- Footer -->
 <footer style="background-color: var(--primary-color); color: var(--white);">
+    <style>
+        .footer-logo, .footer-heading, .footer-tagline, .newsletter-text, .copyright { color: var(--white) !important; }
+        .footer-logo { color: var(--gold) !important; /* Gold logo title */ }
+        .footer-heading { color: var(--gold) !important; /* Gold section headers */ }
+        .footer-links a { color: var(--white) !important; opacity: 0.8; transition: opacity 0.3s; }
+        .footer-links a:hover { opacity: 1; text-decoration: underline; }
+        .footer-social .social-link { color: var(--white) !important; border-color: rgba(255,255,255,0.3); }
+        .footer-social .social-link:hover { background: var(--white); color: var(--primary-color) !important; }
+    </style>
     <div class="footer-content">
         <!-- Brand Column -->
         <div class="footer-col">

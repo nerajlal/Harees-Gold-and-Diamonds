@@ -38,15 +38,17 @@
         .promo-bar { background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%); color: var(--white); padding: 12px 15px; text-align: center; font-size: 12px; font-weight: 600; position: sticky; top: 0; z-index: 1001; }
         .promo-bar span { color: var(--gold); font-weight: 700; }
         
-        .mobile-header { background: var(--white); position: sticky; top: 40px; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 12px 15px; }
-        .header-top { display: flex; justify-content: space-between; align-items: center; }
-        .menu-btn, .back-btn { background: none; border: none; font-size: 24px; cursor: pointer; padding: 5px; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
-        .header-icons { display: flex; gap: 15px; align-items: center; }
-        .icon-btn { background: none; border: none; font-size: 20px; cursor: pointer; position: relative; }
-        .cart-count { position: absolute; top: -5px; right: -8px; background: var(--gold); color: var(--white); width: 16px; height: 16px; border-radius: 50%; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+        /* Desktop Header */
+        .desktop-header { display: none; align-items: center; justify-content: space-between; padding: 20px 40px; background: var(--white); border-bottom: 1px solid #f0f0f0; }
+        .desktop-logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--primary-color); letter-spacing: 1px; text-decoration: none; }
+        .desktop-nav { display: flex; gap: 30px; }
+        .nav-link { text-decoration: none; color: var(--black); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; }
+        .nav-link:hover { color: var(--secondary-color); }
+        .desktop-icons { display: flex; gap: 20px; align-items: center; }
         
         @media (min-width: 900px) {
+            .mobile-header { display: none; }
+            .desktop-header { display: flex; }
             .header-icons { gap: 30px; }
             .icon-btn { font-size: 22px; }
         }

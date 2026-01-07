@@ -59,11 +59,10 @@
     .control-btn { background: none; border: 1px solid var(--primary-color); color: var(--primary-color); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; transition: all 0.3s; margin: 0 10px; }
     .control-btn:hover { background: var(--primary-color); color: var(--white); }
 
-    /* Bestsellers Section - Redesigned */
-    .bestsellers-section { padding: 80px 20px; background: #fcfcfc; }
+    .bestsellers-section { padding: 40px 10px; background: #fcfcfc; }
     .product-grid { 
-        display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-        gap: 30px; max-width: 1300px; margin: 0 auto; 
+        display: grid; grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columns */
+        gap: 15px; max-width: 1300px; margin: 0 auto; 
     }
     .product-card {
         background: transparent; border: none; overflow: hidden; position: relative;
@@ -71,27 +70,31 @@
     }
     .product-image-box {
         position: relative; aspect-ratio: 4/5; overflow: hidden; border-radius: 8px;
-        background: #f0f0f0; margin-bottom: 15px;
+        background: #f0f0f0; margin-bottom: 10px;
     }
     .product-image-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-    .product-card:hover .product-image-box img { transform: scale(1.08); }
+    /* .product-card:hover .product-image-box img { transform: scale(1.08); } Removed zoom for cleaner mobile/desktop feel or keep it optional */
     
     .product-details { padding: 5px; }
-    .product-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
-    .product-name { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--black); font-weight: 600; max-width: 70%; line-height: 1.2; }
-    .product-price { font-weight: 700; color: var(--secondary-color); font-size: 16px; }
+    .product-row { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 10px; gap: 5px; }
+    .product-name { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--black); font-weight: 600; line-height: 1.2; }
+    .product-price { font-weight: 700; color: var(--secondary-color); font-size: 14px; }
     
     .add-cart-btn {
-        width: 100%; padding: 12px; background: var(--primary-color); color: var(--white);
+        width: 100%; padding: 10px; background: var(--primary-color); color: var(--white);
         border: none; border-radius: 4px; font-weight: 600; text-transform: uppercase;
-        font-size: 11px; letter-spacing: 1px; cursor: pointer; transition: all 0.3s;
-        opacity: 0; transform: translateY(10px);
+        font-size: 10px; letter-spacing: 1px; cursor: pointer; transition: all 0.3s;
+        opacity: 1; transform: translateY(0); display: block; /* Always visible */
     }
-    .product-card:hover .add-cart-btn { opacity: 1; transform: translateY(0); }
+    .add-cart-btn:hover { background: var(--secondary-color); }
     
-    /* Mobile optimization for button */
-    @media(max-width: 768px) {
-        .add-cart-btn { opacity: 1; transform: translateY(0); display: block; margin-top: 10px; }
+    /* Desktop optimization */
+    @media(min-width: 900px) {
+        .product-grid { grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .product-row { flex-direction: row; justify-content: space-between; align-items: center; }
+        .product-name { font-size: 18px; max-width: 70%; }
+        .product-price { font-size: 16px; }
+        .add-cart-btn { padding: 12px; font-size: 12px; }
     }
 
     /* Cosmic/Wedding Section */
@@ -437,12 +440,7 @@
         </div>
     </section>
 
-    <!-- Store Banner -->
-    <div class="store-banner">
-        <h2>Visit Our Boutiques</h2>
-        <p>Experience the collection in person at one of our 60 locations.</p>
-        <a href="/stores" class="store-btn-outline">Find a Store</a>
-    </div>
+    <!-- Store Banner Removed -->
 
     <!-- Newsletter Popup -->
     <div class="menu-overlay" id="popupOverlay"></div>
@@ -497,11 +495,16 @@
     function rotateCarousel(direction) {
         const angle = 360 / totalItems;
         currDeg -= direction * angle;
-        carousel.style.transform = `translateZ(-400px) rotateY(${currDeg}deg)`; // Manual Z adjust for spacing
+        carousel.style.transform = `translateZ(-400px) rotateY(${currDeg}deg)`; 
     }
     
     // Initial Setup
     updateCarousel();
+    
+    // Auto Rotation
+    setInterval(() => {
+        rotateCarousel(1);
+    }, 4000);
 
     // Popup Logic
     setTimeout(() => {
