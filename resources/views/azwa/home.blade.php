@@ -180,7 +180,7 @@
             <a href="#collections" class="hero-btn">Explore Collections</a>
         </div>
         <div class="slide active">
-            <img src="https://images.unsplash.com/photo-1629224316810-9d8805b95076?auto=format&fit=crop&w=1920&q=80" alt="Hero 1">
+            <img src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?auto=format&fit=crop&w=1920&q=80" alt="Hero 1">
         </div>
         <div class="slide">
             <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1920&q=80" alt="Hero 2">

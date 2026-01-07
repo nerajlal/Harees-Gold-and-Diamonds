@@ -37,6 +37,13 @@
         /* Common Components */
         .promo-bar { background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%); color: var(--white); padding: 12px 15px; text-align: center; font-size: 12px; font-weight: 600; position: sticky; top: 0; z-index: 1001; }
         .promo-bar span { color: var(--gold); font-weight: 700; }
+        .mobile-header { background: var(--white); position: sticky; top: 40px; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 12px 15px; width: 100%; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .menu-btn, .back-btn { background: none; border: none; font-size: 24px; cursor: pointer; padding: 5px; color: var(--black); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
+        .header-icons { display: flex; gap: 15px; align-items: center; }
+        .icon-btn { background: none; border: none; font-size: 20px; cursor: pointer; position: relative; color: var(--black); transition: color 0.3s; }
+        .icon-btn:hover { color: var(--secondary-color); }
         
         /* Desktop Header */
         .desktop-header { display: none; align-items: center; justify-content: space-between; padding: 20px 40px; background: var(--white); border-bottom: 1px solid #f0f0f0; }
