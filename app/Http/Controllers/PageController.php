@@ -8,60 +8,60 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('azwa.home');
+        return view('hareesgandd.home');
     }
 
     public function collection(Request $request)
     {
         // Simple View return for now
-        return view('azwa.collection');
+        return view('hareesgandd.collection');
     }
 
     public function allProducts()
     {
-        return view('azwa.all-products');
+        return view('hareesgandd.all-products');
     }
     
     public function combos()
     {
         // Assuming combos use collection view or a specific one if it existed. 
         // For now, mapping to collection as placeholder.
-        return view('azwa.collection', ['type' => 'combos']); 
+        return view('hareesgandd.collection', ['type' => 'combos']); 
     }
 
     public function combo()
     {
-        return view('azwa.product-main'); // Assuming combo detail page is product page
+        return view('hareesgandd.product-main'); // Assuming combo detail page is product page
     }
 
     public function cosmopolitan()
     {
-         return view('azwa.collection', ['collection' => 'Cosmopolitan']);
+         return view('hareesgandd.collection', ['collection' => 'Cosmopolitan']);
     }
 
     public function product()
     {
-        return view('azwa.product-main');
+        return view('hareesgandd.product-main');
     }
 
     public function checkout()
     {
-        return view('azwa.checkout');
+        return view('hareesgandd.checkout');
     }
 
     // Policies - checking if views exist or using placeholders
     public function shippingPolicy()
     {
-        return view('azwa.shipping-policy'); // Need to create this if missing
+        return view('hareesgandd.shipping-policy'); // Need to create this if missing
     }
 
     public function returnPolicy()
     {
-        return view('azwa.return-policy'); // Need to create this if missing
+        return view('hareesgandd.return-policy'); // Need to create this if missing
     }
 
     public function termsOfService()
     {
-        return view('azwa.terms-of-service'); // Need to create this if missing
+        return view('hareesgandd.terms-of-service'); // Need to create this if missing
     }
 }

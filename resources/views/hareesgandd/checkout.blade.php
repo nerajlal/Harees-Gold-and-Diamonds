@@ -1,4 +1,4 @@
-@extends('azwa.layouts.app')
+@extends('hareesgandd.layouts.app')
 
 @section('title', 'Checkout - Harees Gold Diamonds')
 

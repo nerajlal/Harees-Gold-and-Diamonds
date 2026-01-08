@@ -8,7 +8,7 @@ class CartController extends Controller
 {
     public function index()
     {
-        return view('azwa.cart');
+        return view('hareesgandd.cart');
     }
 
     public function add(Request $request)

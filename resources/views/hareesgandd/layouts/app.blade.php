@@ -124,13 +124,13 @@
     @stack('styles')
 </head>
 <body>
-    @include('azwa.partials.header')
+    @include('hareesgandd.partials.header')
 
     <main>
         @yield('content')
     </main>
 
-    @include('azwa.partials.footer')
+    @include('hareesgandd.partials.footer')
 
     <script>
         // Smooth Scroll
